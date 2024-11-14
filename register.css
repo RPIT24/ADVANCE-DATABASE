@@ -1,0 +1,107 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a background color and set font for the page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://img.freepik.com/free-vector/hand-drawn-art-supplies-background_23-2150594825.jpg');
+    background-size: cover;                  /* Make the image cover the entire background */
+    background-position: center;             /* Center the background image */
+    background-repeat: no-repeat;            /* Prevent the background image from repeating */
+}
+
+/* Style for the registration form container */
+section {
+    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency for form background */
+    padding: 40px;  /* Added extra padding for better spacing */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style for the header section (the title at the top) */
+header {
+    text-align: center; /* Center the title */
+    margin-bottom: 20px;  /* Add space between the title and the form */
+}
+
+/* Style for the title */
+header h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Style for form labels */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Style for form inputs */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Style for the submit button */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Change button color on hover */
+button:hover {
+    background-color: #45a049;
+}
+
+/* Style for error message */
+#error-message {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+.password-container input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.password-container i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - School Inventory</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="loginpage.css">
+</head>
+<body>
+
+    <!-- Form section for user login -->
+    <section>
+        <form id="loginForm" action="login.php" method="POST">
+            <!-- Username input field -->
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required />
+
+            <!-- Password input field -->
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required />
+
+            <!-- Login button -->
+            <button type="submit">Login</button>
+
+            <!-- Error message placeholder -->
+            <div id="error-message" style="color: red;"></div>
+        </form>
+
+        <!-- Footer for registration link -->
+        <footer>
+            <p>Don't have an account? <a href="register.html">Register here</a></p>
+        </footer>
+    </section>
+
+    <script src="loginpage.js"></script>
+</body>
+</html>

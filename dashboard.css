@@ -1,0 +1,198 @@
+/* Background image settings */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    background-image: url('https://img.freepik.com/free-vector/hand-drawn-art-supplies-background_23-2150594825.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+/* Header style */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Darken header background */
+    width: 100%;
+}
+h1 {
+    text-transform: uppercase; /* Capitalizes all letters */
+    font-size: 36px;
+    font-weight: bold;
+    color: #4CAF50; /* Adjust color as needed */
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Table container styles */
+section {
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for the section */
+    border-radius: 11px;
+    box-sizing: border-box; /* Ensure padding doesn't overflow the section */
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    table-layout: fixed; /* Ensures table layout is fixed to avoid overflow */
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+    word-wrap: break-word; /* Prevent text overflow */
+    overflow-wrap: break-word; /* Ensure text wraps within the box */
+    white-space: normal; /* Allow text to wrap instead of being truncated */
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+}
+
+td {
+    background-color: #f4f4f4;
+}
+
+td[contenteditable="true"] {
+    background-color: #fff;
+    color: #333;
+    white-space: normal; /* Allow wrapping in contenteditable cells */
+    word-wrap: break-word; /* Prevent long words from overflowing */
+}
+
+td button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+td button:hover {
+    background-color: #45a049;
+}
+
+/* Button to add a new row */
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Footer styles */
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer button {
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+footer button:hover {
+    background-color: #e53935;
+}
+
+/* Log out button style */
+footer button.logout {
+    background-color: #f44336; /* Red color for logout button */
+    color: white;
+    font-size: 18px; /* Larger text for visibility */
+    
+}
+
+/* Log out button hover effect */
+footer button.logout:hover {
+    background-color: #d32f2f; /* Darker red for hover effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    footer button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 24px;
+    }
+
+    table th, table td {
+        font-size: 16px; /* Reduce text size for small screens */
+        padding: 8px; /* Less padding for smaller screens */
+    }
+}
+
+/* Style for the Total column */
+td.total {
+    background-color: #f1f1f1;  /* Lighter background color for visibility */
+    color: #333;  /* Dark text color for better contrast */
+    font-weight: bold;
+    font-size: 16px; /* Ensure it stands out */
+}
+
+/* Ensure total column is visible with appropriate padding and background color */
+td.total {
+    text-align: center; /* Center the total */
+    padding: 12px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+}
